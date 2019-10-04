@@ -11,15 +11,17 @@ When people hear of J.R.R. Tolkien, his book "The Silmarillion" is typically not
 Having read both "The Hobbit" and "The Lord of the Rings" at a very early age, I admit to having avoided "The Silmarillion" until about 10 years ago. I was part of a seminar of about 30 other geeks who met online bi-weekly to discuss each chapter of The Silmarillion in detail. The seminar was later released as a podcast ([3](https://tolkienprofessor.com/lectures/courses/silmarillion-seminar/))([4](https://itunes.apple.com/us/course/the-silmarillion-seminar/id599723153)), and for anyone planning to read the book....maybe it will help!
 
 # 2 Data
-The full text of "The Silmarillion" used in this project is accessible here ([5](https://archive.org/stream/fegmcfeggerson_gmail_4731/473%20%281%29_djvu.txt)). After scraping the webpage and cleaning the text, I extracted the entire text and the text for each seperate chapter and created a PANDAS dataframe. I then used the modules NLTK and Text Blob to extract some basic information from the text and then the modules Text Blob, VADER, and the NRC Emotion Lexicon to perform sentiment analyses by chapter. All values for sentiment analyses and descriptive text analyses were added to the dataframe, pictured below:
+The full text of "The Silmarillion" used in this project is accessible here ([5](https://archive.org/stream/fegmcfeggerson_gmail_4731/473%20%281%29_djvu.txt)). After scraping the webpage and cleaning the text, I extracted the entire text and the text for each seperate chapter and created a PANDAS dataframe. I then used the modules NLTK and Text Blob to extract some basic information from the text and then the modules Text Blob, VADER, and the NRC Emotion Lexicon to perform sentiment analyses by chapter. All values for sentiment analyses and descriptive text analyses were added to the dataframe, pictured below.
 
 <img src="Images/Data.jpg" width="900" height="190">
 
 # 3 Text Analysis
-As a first step, I "tokenized" each word from the book to create a word cloud of the most frequent words across the entire text. Next, I did the same for each chapter and created a table of only the most frequently used nouns, the give a sense of what each chapter is about.
-
+## 3.1 Word Cloud 
+Using the Natural Language Toolkit module ([NLTK](https://www.nltk.org/)), I first "tokenized" each word from the book, extracting each "token" and removing all whitespace, punctuation, etc. Then, I made all tokens lower-case for consistency and removed "stop-words." Stopwords are refered to as the words in a text that don't particularly convey significant meaning, such as "the", "in", and "a". Finally, I got the frequency of each word, or toke, and then created a "word cloud" of the most frequently used words superimposed over a shield (much easier than to superimpose over a sword!).
 
 <img src="Images/Silmarillion_wordcloud.png" width="350" height="450">
 
+## 3.2 Most Frequent Nouns
+Again, using NLTK, I conducted the same preliminary text manipulation as above (toekize, lower-case, and stopwords) on each separate chapter. Following this, I used NLTK to tag the different parts of speech for each word. This tags each word in the text with its part of speech, for example "NN" for noun and "VB" for verb. 
 
-<img src="Images/Most_freq_nouns.jpg" width="1200" height="1500">
+<img src="Images/Most_freq_nouns.jpg" width="800" height="1200">
