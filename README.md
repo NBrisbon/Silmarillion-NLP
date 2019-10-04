@@ -17,7 +17,7 @@ The full text of *The Silmarillion* used in this project is accessible here ([5]
 
 # 3 Text Analysis
 ## 3.1 Word Cloud 
-Using the Natural Language Toolkit module ([NLTK](https://www.nltk.org/)), I first "tokenized" each word from the book, extracting each "token" and removing all whitespace, punctuation, etc. Then, I made all tokens lower-case for consistency and removed "stop-words." Stopwords are refered to as the words in a text that don't particularly convey significant meaning, such as "the", "in", and "a". Finally, I got the frequency of each word, or toke, and then created a "word cloud" of the most frequently used words superimposed over a shield (much easier than to superimpose over a sword!).
+Using the Natural Language Toolkit module (NLTK)([6](https://www.nltk.org/)), I first "tokenized" each word from the book, extracting each "token" and removing all whitespace, punctuation, etc. Then, I made all tokens lower-case for consistency and removed "stop-words." Stopwords are refered to as the words in a text that don't particularly convey significant meaning, such as "the", "in", and "a". Finally, I got the frequency of each word, or toke, and then created a "word cloud" of the most frequently used words superimposed over a shield (much easier than to superimpose over a sword!).
 
 <img src="Images/Silmarillion_wordcloud.png" width="350" height="450">
 
@@ -25,3 +25,14 @@ Using the Natural Language Toolkit module ([NLTK](https://www.nltk.org/)), I fir
 Again, using NLTK, I conducted the same preliminary text manipulation as above (toekize, lower-case, and stopwords) on each separate chapter. Following this, I used NLTK to tag the different parts of speech for each word. This tags each word in the text with its part of speech, for example "NN" for noun and "VB" for verb. The top 10 most frequent nouns were extracted for each chapter and appear on the table below. This helps give a sense of what each chapter is about. For example, the *Ainulindalë* is a Creation story of the origin of the universe. The Ainur are spiritual beings, akin to angels, who sing a vision of the universe into existence based on a theme given to them by Iluvatar (God). Melkor is one of the Ainur and the most powerful and knowledgable of them all. He broke from the harmony and developed his own song, causing discord in the overall theme. After some struggle, Iluvatar stopped the music and showed them the world they had created which was before just a vision. As you can see, the top 10 nouns for this chapter strongly reflect the summary just given.
 
 <img src="Images/Most_freq_nouns.jpg" width="800" height="1200">
+
+## 3.3 Lexical Density
+
+
+<img src="Images/Lexical_Density.png" width="700" height="600">
+
+# 4 Sentiment Analyses
+Sentiment analysis is a method of contextual mining of text, or unstructured data, that identifies and extracts subjective information from that source, whether it be a book, tweets, movie and product reviews, or electronic health records. Sentiment analysis is the process of determining the attitude or emotion of the writer. 
+
+## 4.1 TextBlob
+TextBlob ([7](https://textblob.readthedocs.io/en/dev/quickstart.html)) is a Python library for processing textual data and helps with tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, and more. The sentiment function of TextBlob produces two properties: *polarity* and *subjectivity*. Polarity is a number [-1,1] where 1 refers to a positive statement and -1 refers to a negative statement. Subjectivity is a number [0,1] where a 0 refers to an objective statement and 1 refers to a subjective statement. Subjective sentences generally refer to personal opinions, emotions or judgments and objective refers to factual information. 
