@@ -2,7 +2,7 @@
 <img src="Images/Valinor.jpg" width="900" height="400">
 
 # 1 Introduction
-## 1.1 Natural Langauge Processing 
+## 1.1 Natural Language Processing (NLP) 
 Natural Language Processing, or NLP, is within the field of linguistics and refers to a set of techniques for manipulation of natural language, such as speech and text, using software. NLP is a sub-branch of data science and has many applications, though it has been particularly useful in the healthcare industry, with the increased use of Electronic Health Records (EHR). For example, we can now predict risk for suicide and suicidal ideation by applying NLP to EHR's ([1](https://www.nature.com/articles/s41598-018-25773-2)). Companies can apply NLP to social media or product reviews, in order to understand their customers better and ultimately offer a better product or service ([2](https://www.researchgate.net/publication/309691845_A_Review_of_Natural_Language_Processing_Techniques_for_Opinion_Mining_Systems)). Since I don't have ready access to EHR's, I've decided to do this NLP project on one of my favorite books, *The Silmarillion*, by J.R.R. Tolkien. 
 
 ## 1.2 The Silmarillion
@@ -27,7 +27,9 @@ Again, using NLTK, I conducted the same preliminary text manipulation as above (
 <img src="Images/Most_freq_nouns.jpg" width="800" height="1200">
 
 ## 3.3 Lexical Density
+Lexical density is formally defined as the number of lexical words (or content words) divided by the total number of words in a text. Lexical words give a text its meaning and provide information regarding what the text is about (nouns, adjectives, verbs, and adverbs). Other words such as articles (a, the), prepositions (on, at, in), conjunctions (and, or, but), and so forth are more grammatical in nature and, by themselves, give little or no information about what a text is about. With the above in mind, lexical density is simply the percentage of words in a text that offer information about what is being communicated. Lexical density is simply a measure of how informative a text is. 
 
+Because this score is sensitive to total word count, I included both the normal scores for each chapter in addition to the "normalized" scores. The "normalized" scores were attained by only using the first 3440 words in each chapter, as this is the word count for the shortest chapter. Becuase of this sensitivity to word count, it is difficult to compare one text to another, but by using "normalized" scores, we can compare chapters to a reasonable degree. The range of scores is 0 to 1 (0-100%), with higher scores indictating higher lexical density. The scores did not change much between the two methods and the average across all chapters was around 0.25 (*SD* = 0.06) for the normal method and 0.27 (*SD* = 0.04) for the "normalized" method. 
 
 <img src="Images/Lexical_Density.png" width="700" height="600">
 
