@@ -48,8 +48,24 @@ Seen below are the full results from the VADER analysis. You can see right away 
 
 <img src="Images/VADER_full.png" width="900" height="700">
 
-Now, let's look at the same graph without the *Neutral* line and zoomed in to the rest. 
+Now, let's look at the same graph without the *Neutral* line and zoomed in to the rest. The graph shows the *Positive* sentiment is higher than the *Negative* at first, then they both tend to overlap a bit in the middle before *Negative* increases and remains over *Positive* until both essentially converge at the very end of the book. The *Composite* score shows a general negative linear trend throughout the book, with a slight rally at the end. The results seem fairly accurate. For example, consider the surge in the *Composite* score at *Of the Coming of the Elves and the Captivity of Melkor* and then the sudden drop after *Of Feanor and the Unchaining of Melkor*, which continues until the books lowest point during *Of the Darkening of Valinor*. If you've read the book, you know that Melkor is the major antagonist and, as a sort of fallen angel figure, is the source of all the misery throughout. 
 
 <img src="Images/VADER_zoom.png" width="900" height="700">
 
+Here is another visualization of only the *Composite* score with added rankings of *Positive* (>.05), *Negative* (-.05 to .05), and *Neutral* (<.05) for each chapter. 
+
 <img src="Images/VADER_compound.png" width="900" height="700">
+
+## 4.3 NRC Word-Emotion Association Lexicon
+The [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive). The selection of emotions were based on the work of Robert Plutchik, a psychologist and professor who considered these to be the eight primary emotions, combinations of which led to more complex emotions. 
+
+<img src="Images/NRC_PosNeg.png" width="900" height="700">
+
+<img src="Images/NRC_AngerFear.png" width="900" height="700">
+
+<img src="Images/NRC_JoySad.png" width="900" height="700">
+
+<img src="Images/NRC_SurAnt.png" width="900" height="700">
+
+<img src="Images/NRC_TrustDis.png" width="900" height="700">
+
