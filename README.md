@@ -39,12 +39,24 @@ Sentiment analysis is a method of contextual mining of text, or unstructured dat
 ## 4.1 TextBlob
 [TextBlob](https://textblob.readthedocs.io/en/dev/quickstart.html) is a Python library for processing textual data and helps with tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, and more. The sentiment function of TextBlob produces two properties: *polarity* and *subjectivity*. Polarity is a number [-1,1] where 1 refers to a positive statement and -1 refers to a negative statement. Subjectivity is a number [0,1] where a 0 refers to an objective statement and 1 refers to a subjective statement. Subjective sentences generally refer to personal opinions, emotions or judgments and objective refers to factual information. In the graph below, we see that the Subjectivity score is typically around 0.4, give or take, indicating the text is generally more objective than subjective. This makes sense as the book is closer to a historical account, rather than a subjective narrative. The Polarity score across chapters is pretty low between 0.0-0.2, but never drops into the negative range. This is surprising for anyone who has read chapters like *Of The Darkening of Valinor* and *Of Turin Turambar*, though it is reassuring to see that those are some of the lowest points on the line. 
 
+|               | Mean          | SD    |  Min   |   Max  |
+| ------------- |:-------------:| -----:| ------:| ------:|
+| *Polarity*    | 0.11          | 0.06  | 0.003  | 0.214  |
+| *Subjectivity*| 0.41          | 0.05  | 0.338  | 0.507  |
+
 <img src="Images/TextBlob_polarity.png" width="900" height="700">
 
 ## 4.2 VADER
 [VADER](https://github.com/cjhutto/vaderSentiment) (Valence Aware Dictionary and sEntiment Reasoner) is a sentiment analysis tool that is specifically designed to examine sentiments expressed in social media. This lexicon is sensitive to both the *polarity* and the *intensity* of sentiments expressed in social media contexts, and is also generally applicable to other forms of text. Because VADER was specifically designed for use with short pieces of text on social media, I decided to loop the analyses through each sentence of a chapter and then to get the average over all sentences for a total sentiment score for that particular chapter. 
 
 Seen below are the full results from the VADER analysis. You can see right away that the *Neutral* sentiment score is quite high across all chapters. This is likely due to the style of writing in *The Silmarillion*, which is quite formal and impartial. As an example, consider this passage from the chapter with the highest *Negative* rating (*Of the Darkening of Valinor*): *"In a ravine she lived, and took shape as a spider of monstrous form, weaving her black webs in a cleft of the mountains. There she sucked up all light that she could find, and spun it forth again in dark nets of strangling gloom, until no light more could come to her abode; and she was famished*." This passage paints quite a gloomy scene, but it's written in such a formal and matter of fact way, as is the book in general. Now imagine an account of the same monstrous light-eating spider in the form of a personal narrative by a character witnessing it all...I expect the *Neutral* score would be far lower!
+
+|               | Mean          |  SD   |  Min   |   Max  |
+| ------------- |:-------------:| -----:| ------:| ------:|
+| *Positive*    | 0.08          | 0.02  | 0.051  | 0.131  |
+| *Negative*    | 0.07          | 0.02  | 0.020  | 0.098  |
+| *Neutral*     | 0.86          | 0.02  | 0.813  | 0.910  |
+| *Compound*    | 0.05          | 0.11  | -0.136 | 0.251  |
 
 <img src="Images/VADER_full.png" width="900" height="700">
 
@@ -57,15 +69,30 @@ Here is another visualization of only the *Composite* score with added rankings 
 <img src="Images/VADER_compound.png" width="900" height="700">
 
 ## 4.3 NRC Word-Emotion Association Lexicon
-The [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive). The selection of emotions were based on the work of Robert Plutchik, a psychologist and professor who considered these to be the eight primary emotions, combinations of which led to more complex emotions. 
+The [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm) is a list of English words and their associations with eight basic emotions (anger, fear, anticipation, trust, surprise, sadness, joy, and disgust) and two sentiments (negative and positive). The selection of emotions were based on the work of Robert Plutchik, a psychologist and professor who considered these to be the eight primary emotions, combinations of which led to more complex emotions (i.e. *Joy + Trust = Love*). In the graphs below, I've included each basic emotion with what Plutchik considered to be its opposite emotion (i.e. *Anger/Fear*). The table below indicates that the text, in gerneal, hows a higher *Positive* rating than *Negative*. The strongest emotions across all chapters seem to be *Trust*, *Anticipation*, and *Fear*. The weakest emotions are *Surprise* and *Disgust*.
 
-<img src="Images/NRC_PosNeg.png" width="900" height="700">
+|               | Mean          |  SD   |  Min   |   Max  |
+| ------------- |:-------------:| -----:| ------:| ------:|
+| *Positive*    | 0.040         | 0.008 | 0.027  | 0.059  |
+| *Negative*    | 0.029         | 0.008 | 0.009  | 0.042  |
+| *Anger*       | 0.013         | 0.004 | 0.006  | 0.019  |
+| *Fear*        | 0.018         | 0.007 | 0.001  | 0.034  |
+| *Joy*         | 0.015         | 0.005 | 0.008  | 0.026  |
+| *Sadness*     | 0.016         | 0.005 | 0.005  | 0.027  |
+| *Surprise*    | 0.007         | 0.002 | 0.003  | 0.012  |
+| *Anticipation*| 0.022         | 0.004 | 0.013  | 0.030  |
+| *Trust*       | 0.022         | 0.004 | 0.013  | 0.028  |
+| *Disgust*     | 0.008         | 0.003 | 0.002  | 0.015  |
 
-<img src="Images/NRC_AngerFear.png" width="900" height="700">
 
-<img src="Images/NRC_JoySad.png" width="900" height="700">
 
-<img src="Images/NRC_SurAnt.png" width="900" height="700">
+<img src="Images/NRC_PosNeg.png" width="900" height="750">
 
-<img src="Images/NRC_TrustDis.png" width="900" height="700">
+<img src="Images/NRC_AngerFear.png" width="900" height="750">
+
+<img src="Images/NRC_JoySad.png" width="900" height="750">
+
+<img src="Images/NRC_SurAnt.png" width="900" height="750">
+
+<img src="Images/NRC_TrustDis.png" width="900" height="750">
 
