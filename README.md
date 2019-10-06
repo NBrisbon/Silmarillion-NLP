@@ -84,11 +84,15 @@ The [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.
 | *Trust*       | 0.022         | 0.004 | 0.013  | 0.028  |
 | *Disgust*     | 0.008         | 0.003 | 0.002  | 0.015  |
 
-
+In the graph below, we can see that the results mirror the results from the two previous tools, for the most part. Generally, the book shows a higher *Positive* rating, aside from two major points, where the *Negative* rating shoots upward and the *Positive* drops considerably. This happens between *Of the Silmarils and the Unrest of the Nolders* and *Of the Flight of the Noldor* and again between *Of the Ruin of Beleriand and the Fall of Fingolfin* and *Of the Ruin of Doriath*. Those who have read the book know, but even if you haven't, just read the chapter titles and it becomes apparent that these weren't good times..."flight", "unrest", "ruin", "fall".
 
 <img src="Images/NRC_PosNeg.png" width="900" height="750">
 
+In the *Anger/Fear* graph, we see both emotions follow a similar trend, though the *Fear* shows some stronger spikes. This is particularly evident during *Of the Ruin of Beleriand and the Fall of Fingolfin* and *Of Turin Turambar*. These are fearful chapters. During the former, Fingolfin, one of the most powerful Elves, dies during physical combat with Morgoth (AKA, Melkor) and would have had his broken body fed to his wolves if Thorondor, the King of the Eagles, hadn't swooped down and taken him away. In the latter, Turin is a tragic cursed hero who basically has every bad thing happen to him...ever.   
+
 <img src="Images/NRC_AngerFear.png" width="900" height="750">
+
+
 
 <img src="Images/NRC_JoySad.png" width="900" height="750">
 
