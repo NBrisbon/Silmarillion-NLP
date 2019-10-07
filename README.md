@@ -118,6 +118,6 @@ fleets over the sunlit earth; and they came before the green mound Ezellohar. Th
 
 The stark contrast in emotional content of these two chapters is obvious to any human reader, but isn't it amazing that with some guidance, a machine can come to the same conclusion. I think this effectively demonstrates the power of NLP in working with unstructured data. This type of text data is ubiquitous, whether found in a text like *The Silmarillion* or with social media posts, emails, product reviews, and electronic health records. 
 
-If you haven't read *The Silmarillion* and this report has piqued your interest...go for it! And remember to check out the [podcast](https://itunes.apple.com/us/course/the-silmarillion-seminar/id599723153) I mentioned at the start. I haven't listened to it in years because I hate the sound of my recorded voice, but for others I'm sure it can offer some solid commentary! 
+If you haven't read *The Silmarillion* and this report has piqued your interest...[go for it](https://www.amazon.com/Silmarillion-J-R-Tolkien-2013-08-01/dp/B01N2GB9TY/ref=sr_1_2?keywords=silmarillion&qid=1570414529&sr=8-2)! And remember to check out the [podcast](https://itunes.apple.com/us/course/the-silmarillion-seminar/id599723153) I mentioned at the start. I haven't listened to it in years because I hate the sound of my recorded voice, but for others I'm sure it can offer some solid commentary! 
 
 I'll likely follow this with similar analyses of *The Hobbit* and *The Lord of the Rings*, so if you're into it, stay tuned...
