@@ -106,7 +106,7 @@ Similar to the preceding graph, the *Trust/Disgust* graph reveals no overlap bet
 
 # 5 Conclusion
 Across these different sentiment analyses, we can see a general consensus that *negativity* tends to increase throughout the book and *positivity* tends to decrease. There were two points throughout the analyses that revealed emotional extremes in the book. The first was during *Of Thingol and Melian* and the second was during *Of the Darkening of Valinor*. These likely seem reasonable extremes to those who have read the book. For those who haven't, consider the emotional differences in the following short passages from each chapter:
-
+______________________________________
 
 **Of Thingol and Melian**:
 
@@ -116,7 +116,7 @@ Across these different sentiment analyses, we can see a general consensus that *
 
 "*And in that very hour Melkor and Ungoliant came hastening over the fields of Valinor, as the shadow of a black cloud upon the wind
 fleets over the sunlit earth; and they came before the green mound Ezellohar. Then the Unlight of Ungoliant rose up even to the roots of the Trees, and Melkor sprang upon the mound; and with his black spear he smote each Tree to its core, wounded them deep, and their sap poured forth as it were their blood, and was spilled upon the ground. But Ungoliant sucked it up, and going then from Tree to Tree she set her black beak to their wounds, till they were drained; and the poison of Death that was in her went into their tissues and withered them, root, branch, and leaf; and they died. And still she thirsted, and going to the Wells of Varda she drank them dry; but Ungoliant belched forth black vapours as she drank, and swelled to a shape so vast and hideous that Melkor was afraid.*"
-
+______________________________________
 
 The stark contrast in emotional content of these two chapters is obvious to any human reader, but isn't it amazing that with some guidance, a machine can come to the same conclusion. I think this effectively demonstrates the power of NLP in working with unstructured data. This type of text data is ubiquitous, whether found in a text like *The Silmarillion* or with social media posts, emails, product reviews, and electronic health records. 
 
