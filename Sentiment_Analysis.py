@@ -167,6 +167,12 @@ rings = book[657544:711150]
 print(akallabeth)
 
 
+# In[267]:
+
+
+print(ch8)
+
+
 # In[16]:
 
 
@@ -553,11 +559,8 @@ from tqdm import trange
 
 def text_emotion(df, column):
     '''
-    Takes a DataFrame and a specified column of text and adds 10 columns to the
-    DataFrame for each of the 10 emotions in the NRC Emotion Lexicon, with each
-    column containing the value of the text in that emotions
     INPUT: DataFrame, string
-    OUTPUT: the original DataFrame with ten new columns
+    OUTPUT: the original DataFrame with ten new columns for each emotion
     '''
 
     new_df = df.copy()
@@ -648,4 +651,28 @@ silmarillion_sentiments_final.head()
 
 
 silmarillion_sentiments_final.to_csv(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\silmarillion_sentiments.csv')
+
+
+# In[269]:
+
+
+def ratings(silmarillion_sentiments_final):
+    if silmarillion_sentiments_final['Compound'] > 0.05:
+        return 1
+    elif silmarillion_sentiments_final['Compound'] < -0.05:
+        return -1
+    else:
+        return 0
+
+silmarillion_sentiments_final['Rating_num'] = silmarillion_sentiments_final.apply(ratings, axis=1)
+
+silmarillion_sentiments_final.to_csv(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\silmarillion_sentiments.csv')
+
+silmarillion_sentiments_final.head(10)
+
+
+# In[ ]:
+
+
+
 

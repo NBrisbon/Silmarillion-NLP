@@ -17,7 +17,7 @@ pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
 
 
-# In[181]:
+# In[215]:
 
 
 silmarillion_sentiments=pd.read_csv(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\silmarillion_sentiments.csv')
@@ -25,13 +25,13 @@ silmarillion_sentiments=silmarillion_sentiments.drop(columns=['Unnamed: 0'])
 silmarillion_sentiments.head()
 
 
-# In[137]:
+# In[216]:
 
 
 silmarillion_sentiments.describe()
 
 
-# In[118]:
+# In[198]:
 
 
 import matplotlib.patches as mpatches
@@ -59,7 +59,7 @@ ax.invert_yaxis()
 plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\Lexical_Diversity.png',bbox_inches='tight')
 
 
-# In[119]:
+# In[199]:
 
 
 import matplotlib.patches as mpatches
@@ -117,7 +117,7 @@ print ('Disgust: {0:.3f}'.format(silmarillion_sentiments['Disgust'].mean()))
 print ('Sadness: {0:.3f}'.format(silmarillion_sentiments['Sadness'].mean()))
 
 
-# In[120]:
+# In[200]:
 
 
 ax = plt.gca()
@@ -143,7 +143,7 @@ plt.ylabel('Average Sentiment', fontsize=30)
 plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\VADER_full.png',bbox_inches='tight')
 
 
-# In[124]:
+# In[201]:
 
 
 ax1 = plt.gca()
@@ -167,7 +167,7 @@ plt.ylabel('Average Sentiment', fontsize=30)
 plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\VADER_zoom.png',bbox_inches='tight')
 
 
-# In[149]:
+# In[202]:
 
 
 ax2 = plt.gca()
@@ -188,7 +188,7 @@ plt.ylabel('Average Sentiment', fontsize=30)
 plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\TextBlob_polarity.png',bbox_inches='tight')
 
 
-# In[153]:
+# In[203]:
 
 
 ax = plt.gca()
@@ -206,8 +206,10 @@ plt.yticks(fontsize=16)
 plt.ylabel('Sentiment Score', fontsize=30)
 #plt.show()
 
+plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\NRC_PosNeg.png',bbox_inches='tight')
 
-# In[174]:
+
+# In[204]:
 
 
 ax = plt.gca()
@@ -229,8 +231,10 @@ plt.yticks(fontsize=16)
 plt.ylabel('Sentiment Score', fontsize=30)
 #plt.show()
 
+plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\NRC_Neg.png',bbox_inches='tight')
 
-# In[178]:
+
+# In[205]:
 
 
 ax = plt.gca()
@@ -252,8 +256,10 @@ plt.yticks(fontsize=16)
 plt.ylabel('Sentiment Score', fontsize=30)
 #plt.show()
 
+plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\NRC_Pos.png',bbox_inches='tight')
 
-# In[197]:
+
+# In[206]:
 
 
 ax = plt.gca()
@@ -271,8 +277,10 @@ plt.yticks(fontsize=16)
 plt.ylabel('Sentiment Score', fontsize=30)
 #plt.show()
 
+plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\NRC_JoySad.png',bbox_inches='tight')
 
-# In[196]:
+
+# In[207]:
 
 
 ax = plt.gca()
@@ -290,8 +298,10 @@ plt.yticks(fontsize=16)
 plt.ylabel('Sentiment Score', fontsize=30)
 #plt.show()
 
+plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\NRC_SurAnt.png',bbox_inches='tight')
 
-# In[195]:
+
+# In[208]:
 
 
 ax = plt.gca()
@@ -309,8 +319,10 @@ plt.yticks(fontsize=16)
 plt.ylabel('Sentiment Score', fontsize=30)
 #plt.show()
 
+plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\NRC_TrustDis.png',bbox_inches='tight')
 
-# In[192]:
+
+# In[209]:
 
 
 ax = plt.gca()
@@ -319,7 +331,7 @@ silmarillion_sentiments.plot(kind='line',x='Chapters', y='Anger',figsize=(25,15)
 silmarillion_sentiments.plot(kind='line',x='Chapters', y='Fear',figsize=(25,15), color='forestgreen',
                              alpha=.35, linewidth=8, ax=ax)
 plt.legend(loc='best', fontsize=20)
-plt.title('Chapter Sentiment (Positive) of The Silmarillion (NRC)', fontsize=40)
+plt.title('Anger/Fear Sentiments of The Silmarillion (NRC)', fontsize=40)
 plt.xlim(-1,28)
 #plt.ylim(-.2,1)
 plt.xlabel('Chapter', fontsize=30)
@@ -328,9 +340,5 @@ plt.yticks(fontsize=16)
 plt.ylabel('Sentiment Score', fontsize=30)
 #plt.show()
 
-
-# In[ ]:
-
-
-
+plt.savefig(r'C:\Users\Nick\Desktop\GitProjects\NLP_projects\The_Silmarillion\NRC_AngerFear.png',bbox_inches='tight')
 
