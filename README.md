@@ -13,7 +13,7 @@ Having read both *The Hobbit* and *The Lord of the Rings* at a very early age, I
 # 2 Data
 The full text of *The Silmarillion* used in this project is accessible [here](https://archive.org/stream/fegmcfeggerson_gmail_4731/473%20%281%29_djvu.txt). After scraping the webpage and cleaning the text, I extracted the entire text and the text for each separate chapter and created a PANDAS dataframe. I then used the modules NLTK and Text Blob to extract some basic information from the text and then the modules Text Blob, VADER, and the NRC Emotion Lexicon to perform sentiment analyses by chapter. All values for sentiment analyses and descriptive text analyses were added to the dataframe, pictured below.
 
-<img src="Images/Data.jpg" width="900" height="190">
+<img src="Images/Data.jpg" width="1000" height="220">
 
 # 3 Text Analyses
 ## 3.1 Word Cloud 
