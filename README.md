@@ -88,15 +88,36 @@ In the graph below, we can see that the results mirror the results from the two 
 
 <img src="Images/NRC_PosNeg.png" width="900" height="750">
 
-In the *Anger/Fear* graph, we see both emotions follow a similar trend, though the *Fear* shows some stronger spikes. This is particularly evident during *Of the Ruin of Beleriand and the Fall of Fingolfin* and *Of Turin Turambar*. These are fearful chapters. During the former, Fingolfin, one of the most powerful Elves, dies during physical combat with Morgoth (AKA, Melkor) and would have had his broken body fed to his wolves if Thorondor, the King of the Eagles, hadn't swooped down and taken him away. In the latter, Turin is a tragic cursed hero who basically has every bad thing happen to him...ever.   
+In the *Anger/Fear* graph, we see both emotions follow a similar trend, though the *Fear* shows some stronger spikes. This is particularly evident during *Of the Ruin of Beleriand and the Fall of Fingolfin* and *Of Turin Turambar*. These are fearful chapters. During the former, Fingolfin, one of the most powerful Elves, dies during physical combat with Morgoth (AKA, Melkor) and would have had his broken body fed to his wolves if Thorondor, the King of the Eagles, hadn't swooped down and taken him away. In the latter, Turin is a tragic cursed hero who basically has every bad thing happen to him...ever. Turin is basically the embodiment of Murphy's law.   
 
 <img src="Images/NRC_AngerFear.png" width="900" height="750">
 
-
+In the *Joy/Sadness* graph, we see the emotions tend to travel in opposite paths, bu tnot always. Generally, there is a slight positive trend in *Sadness* and a negative trend in *Joy* through out the book, meaning that *Sadness* tends to increase over the chapters, while *Joy* tends to decrease. The point with the lowest *Joy* and highest *Sadness* seems to be during *The Darkening of Valinor* and the point of highest *Joy* and lowest *Sadness* seems to be during *Of Thingol and Melian*. 
 
 <img src="Images/NRC_JoySad.png" width="900" height="750">
 
+In contrast with the first two graphs, the graph below shows two emotions that do not cross paths. *Anticipation* rates higher than *Surprise* consistently throughout the entire book. *Surprise* yields the lowest average score of all the emotions measured and also has a faily low range in scores. *Anticipation* is highest during *Of Men*, which makes sense. This is a chapter that covers the creation of Man by Iluvatar, discusses their fate compared with that of the Elves, and mentions the eventual fading power of the Elves and how Men "usurped the sunlight." 
+
 <img src="Images/NRC_SurAnt.png" width="900" height="750">
+
+Similar to the preceeding graph, the *Trust/Disgust* graph reveals no overlap between the emotions. *Trust* is considerably higher than *Disgust* throughout. During *Of the Darkening of Valinor*, the two emotions come closest where *Trust* is lowest. Remember this is the chapter with the "monstrous light-eating spider", but more than that, it's a pivotal point in the book where Morgoth basically puts an end to the relative bliss previously experienced by the Valar and the Elves. 
 
 <img src="Images/NRC_TrustDis.png" width="900" height="750">
 
+# Conclusion
+Across these different sentiment analyses, we can see a general consensus that *negativity* tends to increase throughout the book and *positivity* tends to decrease. There were two points throughout the analyses that revealed emotional extremes in the book. The first was during *Of Thingol and Melian* and the second was during *Of the Darkening of Valinor*. These likely seem reasonable extremes to those who have read the book. For those who haven't, consider the emotional differences in the following short passages from each chapter:
+
+***Of Thingol and Melian***:
+
+"*Elwe, lord of the Teleri, went often through the great woods to seek out Finwe his friend in the dwellings of the Noldor; and it chanced on a time that he came alone to the starlit wood of Nan Elmoth, and there suddenly he heard the song of nightingales. Then an enchantment fell on him, and he stood still; and afar off beyond the voices of the lomelindi he heard the voice of Melian, and it filled all his heart with wonder and desire. He forgot then utterly all his people and all the purposes of his mind, and following the birds under the shadow of the trees he passed deep into Nan Elmoth and was lost. But he came at last to a glade open to the stars, and there Melian stood; and out of the darkness he looked at her, and the light of Aman was in her face. She spoke no word; but being filled with love Elwe came to her and took her hand, and straightway a spell was laid on him, so that they stood thus while long years were measured by the wheeling stars above them; and the trees of Nan Elmoth grew tall and dark before they spoke any word.*" 
+
+***Of the Darkening of Valinor***
+
+"*And in that very hour Melkor and Ungoliant came hastening over the fields of Valinor, as the shadow of a black cloud upon the wind
+fleets over the sunlit earth; and they came before the green mound Ezellohar. Then the Unlight of Ungoliant rose up even to the roots of the Trees, and Melkor sprang upon the mound; and with his black spear he smote each Tree to its core, wounded them deep, and their sap poured forth as it were their blood, and was spilled upon the ground. But Ungoliant sucked it up, and going then from Tree to Tree she set her black beak to their wounds, till they were drained; and the poison of Death that was in her went into their tissues and withered them, root, branch, and leaf; and they died. And still she thirsted, and going to the Wells of Varda she drank them dry; but Ungoliant belched forth black vapours as she drank, and swelled to a shape so vast and hideous that Melkor was afraid.*"
+
+The stark contrast in emotional content of these two chapters is obvious to any human reader, but isn't it amazing that with some guidance, a machine can come to the same conclusion. I think this effectively demonstrates the power of NLP in working with unstructured data. This type of text data is ubiquitous, whether found in a text like *The Silmarillion* or with social media posts, emails, product reviews, and electronic health records. 
+
+If you haven't read *The Silmarillion* and this report has piqued your interest...go for it! And remember to check out the [podcast](https://itunes.apple.com/us/course/the-silmarillion-seminar/id599723153) I mentioned at the start. I haven't listened to it in years because I hate the sound of my recorded voice, but for others I'm sure it can offer some solid commentary! 
+
+I'll likely follow this with similar analyses of *The Hobbit* and *The Lord of the Rings*, so if you're into it, stay tuned...
