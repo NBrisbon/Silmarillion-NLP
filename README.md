@@ -1,4 +1,4 @@
-# An NLP Project on "The Silmarillion" by J.R.R. Tolkien
+# An NLP Project on "*The Silmarillion*" by J.R.R. Tolkien
 <img src="Images/Valinor.jpg" width="900" height="400">
 
 # 1 Introduction
@@ -83,6 +83,8 @@ The [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.
 | *Anticipation*| 0.022         | 0.004 | 0.013  | 0.030  |
 | *Trust*       | 0.022         | 0.004 | 0.013  | 0.028  |
 | *Disgust*     | 0.008         | 0.003 | 0.002  | 0.015  |
+
+<img src="Images/NRC_means.png" width="500" height="400">
 
 In the graph below, we can see that the results mirror the results from the two previous tools, for the most part. Generally, the book shows a higher *Positive* rating, aside from two major points, where the *Negative* rating shoots upward and the *Positive* drops considerably. This happens between *Of the Silmarils and the Unrest of the Noldor* and *Of the Flight of the Noldor* and again between *Of the Ruin of Beleriand and the Fall of Fingolfin* and *Of the Ruin of Doriath*. Those who have read the book know, but even if you haven't, just read the chapter titles and it becomes apparent that these weren't good times..."flight", "unrest", "ruin", "fall".
 
