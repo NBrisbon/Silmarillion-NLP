@@ -96,7 +96,7 @@ In the *Joy/Sadness* graph, we see the emotions tend to travel in opposite paths
 
 <img src="Images/NRC_JoySad.png" width="900" height="750">
 
-In contrast with the first two graphs, the graph below shows two emotions that do not cross paths. *Anticipation* rates higher than *Surprise* consistently throughout the entire book. *Surprise* yields the lowest average score of all the emotions measured and also has a fairly low range in scores. *Anticipation* is highest during *Of Men*, which makes sense. This is a chapter that covers the creation of Man by Iluvatar, discusses their fate compared with that of the Elves, and mentions the eventual fading power of the Elves and how Men "usurped the sunlight." 
+In contrast with the first two graphs, the graph below shows two emotions that do not cross paths. *Anticipation* rates higher than *Surprise* consistently throughout the entire book. *Surprise* yields the lowest average score of all the emotions measured and also has a fairly low range in scores. *Anticipation* is highest during *Of Men*, which makes sense. This is a chapter that covers the creation of Man by Iluvatar, discusses their fate compared with that of the Elves, and mentions the *anticipated* fading power of the Elves and how Men "usurped the sunlight." 
 
 <img src="Images/NRC_SurAnt.png" width="900" height="750">
 
