@@ -17,7 +17,7 @@ The full text of *The Silmarillion* used in this project is accessible [here](ht
 
 # 3 Text Analyses
 ## 3.1 Word Cloud 
-Using the Natural Language Toolkit module [NLTK](https://www.nltk.org/), I first "tokenized" each word from the book, extracting each "token" and removing all whitespace, punctuation, etc. Then, I made all tokens lower-case for consistency and removed "stop-words." Stopwords are referred to as the words in a text that don't particularly convey significant meaning, such as "the", "in", and "a". Finally, I got the frequency of each word, or toke, and then created a "word cloud" of the most frequently used words superimposed over a shield (much easier than to superimpose over a sword!).
+Using the Natural Language Toolkit module [NLTK](https://www.nltk.org/), I first "tokenized" each word from the book, extracting each "token" and removing all whitespace, punctuation, etc. Then, I made all tokens lower-case for consistency and removed "stop-words." Stopwords are referred to as the words in a text that don't particularly convey significant meaning, such as "the", "in", and "a". Finally, I got the frequency of each word, or token, and then created a "word cloud" of the most frequently used words superimposed over a shield (much easier than to superimpose over a sword!).
 
 <img src="Images/Silmarillion_wordcloud.png" width="350" height="450">
 
